@@ -61,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
         {
             GameManager.Instance.pokemon = collision.gameObject.GetComponent<Pokemon>();
             GameManager.Instance.OpenCombatScene();
+            Debug.Log(GameManager.Instance.pokemon);
         }
 
         if (collision.gameObject.CompareTag("Item"))

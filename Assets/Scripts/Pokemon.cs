@@ -5,7 +5,7 @@ public class Pokemon : MonoBehaviour
     public SpriteRenderer sp;
     public float successRate = 70f;
 
-    private void Awake()
+    public void Init()
     {
         sp = GetComponent<SpriteRenderer>();
     }

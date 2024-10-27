@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7208397677224701630}
   - component: {fileID: 577682220055685421}
   m_Layer: 0
-  m_Name: Pokemon
+  m_Name: Pokemon Base Prefab
   m_TagString: Pokemon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
