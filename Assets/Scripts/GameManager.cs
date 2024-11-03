@@ -31,5 +31,6 @@ public class GameManager : MonoBehaviour
     public void CloseCombatScene()
     {
         SceneManager.UnloadSceneAsync(combatScene);
+        UIManager.Instance.OpenMainUI();
     }
 }

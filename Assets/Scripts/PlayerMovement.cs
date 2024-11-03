@@ -59,9 +59,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Pokemon") && SceneManager.sceneCount < 2)
         {
+            UIManager.Instance.CloseMainUI();
             GameManager.Instance.pokemon = collision.gameObject.GetComponent<Pokemon>();
             GameManager.Instance.OpenCombatScene();
-            Debug.Log(GameManager.Instance.pokemon);
         }
 
         if (collision.gameObject.CompareTag("Item"))
