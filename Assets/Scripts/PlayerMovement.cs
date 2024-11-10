@@ -3,9 +3,24 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement Instance;
+
     [SerializeField] private float moveSpeed = 5f;
     private Rigidbody2D rb;
     private Vector2 movement;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void Start()
     {
@@ -59,7 +74,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Pokemon") && SceneManager.sceneCount < 2)
         {
-            UIManager.Instance.CloseMainUI();
             GameManager.Instance.pokemon = collision.gameObject.GetComponent<Pokemon>();
             GameManager.Instance.OpenCombatScene();
         }

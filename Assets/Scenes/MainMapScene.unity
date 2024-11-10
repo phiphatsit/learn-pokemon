@@ -1214,7 +1214,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601019673}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1237,6 +1237,7 @@ MonoBehaviour:
   mainUI: {fileID: 206218124}
   panelOpen: {fileID: 816221400}
   inventoryPanel: {fileID: 8062933660954928041, guid: e876c14d767d34849a64e30af4c4bd9c, type: 3}
+  player: {fileID: 1957045727}
   inventoryButton: {fileID: 261251727}
 --- !u!1 &816221399
 GameObject:
@@ -1682,6 +1683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa298e73807e8b4681649a25993b796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1957045727}
   pokemon: {fileID: 0}
   item: 0
   food: 0
@@ -2325,9 +2327,9 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 601019675}
   - {fileID: 1477067141}
   - {fileID: 1884792496}
+  - {fileID: 601019675}
   - {fileID: 7649188624261319503}
   - {fileID: 891994460}
   - {fileID: 1821374141}
