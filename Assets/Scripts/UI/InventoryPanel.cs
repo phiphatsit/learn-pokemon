@@ -21,7 +21,7 @@ public class InventoryPanel : BasePanel
     {
         base.OpenPanel();
 
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < 10; i++)
         {
             Instantiate(pokemonSlot, content);
         }
